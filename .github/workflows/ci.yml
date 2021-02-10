@@ -15,8 +15,5 @@ jobs:
 
     steps:
       - uses: actions/setup-node@v2
-        with:
-          node-version: '12'
-      - run: git submodule update --init --recursive
       - run: npm install
       - run: npm run stylelint
