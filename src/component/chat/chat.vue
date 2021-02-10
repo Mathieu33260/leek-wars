@@ -181,17 +181,17 @@
 
 		updateScroll(force: boolean = false) {
 			if (!this.userScroll || force) {
-				const messages = this.$refs.messages as HTMLElement
+				    const messages = this.$refs.messages as HTMLElement
 				setTimeout(() => {
-					if (messages) {
-						messages.scrollTop = messages.scrollHeight + 1000
+					if (  messages) {
+						messages.scrollTop =  messages.scrollHeight + 1000
 						this.unread = false
 					}
 				}, 60)
 			}
 		}
 
-		@Watch('channel', {immediate: true})
+		@Watch('channel' ,{immediate: true})
 		update() {
 			if (!this.channel) { return }
 			if (this.channel === 'team') {
