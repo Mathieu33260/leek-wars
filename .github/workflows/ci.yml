@@ -19,4 +19,8 @@ jobs:
       - run: ls
       - run: pwd
       - run: ls ..
+      - run: ls ../..
+      - run: ls ../../..
+      - run: ls ../../../..
+      - run: ls ../../../../..
       
