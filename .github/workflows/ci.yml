@@ -17,4 +17,6 @@ jobs:
       - uses: actions/setup-node@v2
       - run: npm install
       - run: ls
+      - run: pwd
+      - run: ls ..
       
