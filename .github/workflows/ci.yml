@@ -14,13 +14,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - run: npm install
       - run: ls
       - run: pwd
-      - run: ls ..
-      - run: ls ../..
-      - run: ls ../../..
-      - run: ls ../../../..
-      - run: ls ../../../../..
       
